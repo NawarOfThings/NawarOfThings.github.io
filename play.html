@@ -350,25 +350,25 @@ document.addEventListener('keydown', function(e) {
   }
 
   // R key (restart)
-if (e.which === 82) { 
-  // reset playfield
-  for (let row = -2; row < 20; row++) {
-    playfield[row] = [];
-    for (let col = 0; col < 10; col++) {
-      playfield[row][col] = 0;
+  if (e.which === 82) { 
+    // reset playfield
+    for (let row = -2; row < 20; row++) {
+        playfield[row] = [];
+        for (let col = 0; col < 10; col++) {
+        playfield[row][col] = 0;
+        }
     }
-  }
 
-  // reset sequence and state
-  tetrominoSequence.length = 0;
-  tetromino = getNextTetromino();
-  gameOver = false;
-  count = 0;
+    // reset sequence and state
+    tetrominoSequence.length = 0;
+    tetromino = getNextTetromino();
+    gameOver = false;
+    count = 0;
 
-  // restart animation
-  cancelAnimationFrame(rAF);
-  rAF = requestAnimationFrame(loop);
-}
+    // restart animation
+    cancelAnimationFrame(rAF);
+    rAF = requestAnimationFrame(loop);
+ }
 
 });
 
