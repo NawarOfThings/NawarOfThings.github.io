@@ -424,7 +424,7 @@ section{
 #game-sidebar h3 {
     margin-top: 0;
     color: var(--accent);
-    font-size: 1.2em;
+    font-size: 2em;
     letter-spacing: 1px;
     text-align: center;
 }
