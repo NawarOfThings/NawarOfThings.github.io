@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Basic Tetris HTML Game</title>
-  <meta charset="UTF-8">
-  <style>
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-
-  body {
-    background: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  canvas {
-    border: 1px solid white;
-  }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play: NawarOfThings</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="./image/icon.jpg" type="image/x-icon" />
+    <link href='style.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Nav bar -->
+    <nav>
+        <a href="index" class="logo"><span>NawarOfThings</span></a>
+        <ul class="links">
+            <a href="index" class="link">Home</a>
+            <a href="portfolio" class="link">Portfolio</a>
+            <a href="play" class="link">Play!</a>
+            <a href="contact" class="link">Contact</a>
+        </ul>
+        <i class='bx bx-menu' id="menu"></i>
+    </nav>
+
 <canvas width="320" height="640" id="game"></canvas>
 <script>
 // https://tetris.fandom.com/wiki/Tetris_Guideline
