@@ -43,9 +43,10 @@
         <button class="btn"><a href="play3">Pong</a></button>
         <!-- ... -->
     </div>
+    <canvas width="320" height="585" id="game"></canvas>
 </div>
 
-<canvas width="750" height="585" id="game"></canvas>
+<canvas width="320" height="585" id="game"></canvas>
 <script>
 const canvas = document.getElementById('game');
 const context = canvas.getContext('2d');
@@ -125,7 +126,7 @@ function loop() {
   }
 
   // draw paddles
-  context.fillStyle = 'white';
+  context.fillStyle = '#a782e9';
   context.fillRect(leftPaddle.x, leftPaddle.y, leftPaddle.width, leftPaddle.height);
   context.fillRect(rightPaddle.x, rightPaddle.y, rightPaddle.width, rightPaddle.height);
 
