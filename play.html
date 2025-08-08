@@ -11,11 +11,10 @@
     <style>
         body {
             margin: 0;
-            height: 100vh; /* full screen height */
+            height: 100vh;
             display: flex;
-            justify-content: center; /* center horizontally */
-            align-items: center; /* center vertically */
-            background-color: #000; /* optional: match game background */
+            justify-content: center; 
+            align-items: center;
         }
 
         canvas {
@@ -92,6 +91,14 @@ function rotate(matrix) {
     row.map((val, j) => matrix[N - j][i])
   );
 
+  return result;
+}
+
+function rotateLeft(matrix) {
+  const N = matrix.length - 1;
+  const result = matrix.map((row, i) =>
+    row.map((val, j) => matrix[j][N - i])
+  );
   return result;
 }
 
@@ -306,6 +313,14 @@ document.addEventListener('keydown', function(e) {
   // up arrow key (rotate)
   if (e.which === 38) {
     const matrix = rotate(tetromino.matrix);
+    if (isValidMove(matrix, tetromino.row, tetromino.col)) {
+      tetromino.matrix = matrix;
+    }
+  }
+
+  // z key (rotate left)
+  if (e.which === 90) {
+    const matrix = rotateLeft(tetromino.matrix);
     if (isValidMove(matrix, tetromino.row, tetromino.col)) {
       tetromino.matrix = matrix;
     }
