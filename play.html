@@ -234,7 +234,7 @@ const tetrominos = {
 
 // color of each tetromino
 const colors = {
-  'I': '#a782e9', // Soft purple accent
+  'I': '#22223b', // Soft purple accent
   'O': '#ffd6a5', // Warm light orange
   'T': '#393552', // Lighter, muted purple
   'S': '#a782e9', // Soft purple accent
@@ -348,6 +348,28 @@ document.addEventListener('keydown', function(e) {
 
     placeTetromino();
   }
+
+  // R key (restart)
+if (e.which === 82) { 
+  // reset playfield
+  for (let row = -2; row < 20; row++) {
+    playfield[row] = [];
+    for (let col = 0; col < 10; col++) {
+      playfield[row][col] = 0;
+    }
+  }
+
+  // reset sequence and state
+  tetrominoSequence.length = 0;
+  tetromino = getNextTetromino();
+  gameOver = false;
+  count = 0;
+
+  // restart animation
+  cancelAnimationFrame(rAF);
+  rAF = requestAnimationFrame(loop);
+}
+
 });
 
 // start the game
