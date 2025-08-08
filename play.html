@@ -234,13 +234,13 @@ const tetrominos = {
 
 // color of each tetromino
 const colors = {
-  'I': 'cyan',
-  'O': 'yellow',
-  'T': 'purple',
-  'S': 'green',
-  'Z': 'red',
-  'J': 'blue',
-  'L': 'orange'
+  'I': '#a782e9', // Soft purple accent
+  'O': '#ffd6a5', // Warm light orange
+  'T': '#393552', // Lighter, muted purple
+  'S': '#a782e9', // Soft purple accent
+  'Z': '#ffd6a5', // Warm light orange
+  'J': '#393552', // Lighter, muted purple
+  'L': '#a782e9'  // Soft purple accent
 };
 
 let count = 0;
@@ -338,6 +338,15 @@ document.addEventListener('keydown', function(e) {
     }
 
     tetromino.row = row;
+  }
+
+  // space bar (hard drop)
+  if (e.which === 32) { /
+    while (isValidMove(tetromino.matrix, tetromino.row + 1, tetromino.col)) {
+      tetromino.row++;
+    }
+
+    placeTetromino();
   }
 });
 
