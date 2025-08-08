@@ -401,6 +401,34 @@ section{
     color: var(--text-dark);
 }
 
+.game-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+#game-sidebar {
+    width: 180px;
+    min-height: 400px;
+    background: var(--second-background);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    margin-right: 32px;
+    padding: 24px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#game-sidebar h3 {
+    margin-top: 0;
+    color: var(--accent);
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
 form{
     display: flex;
     flex-direction: column;
