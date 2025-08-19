@@ -583,6 +583,12 @@ footer{
         padding: 0.2em 0.2em; /* Adjust padding */
         min-width: 100px; /* Ensure boxes are not too small */
     }
+
+    .box img {
+        max-height: 500px;
+        min-height: 100px;
+        width: 100%;
+    }
 }
 
 @media(max-width: 768px){
@@ -624,6 +630,12 @@ footer{
     }
     .skills-grid {
         grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+
+    .box img {
+        max-height: 200px;
+        min-height: 80px;
+        width: 100%;
     }
 
     footer{
