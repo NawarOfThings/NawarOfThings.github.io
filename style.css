@@ -229,7 +229,7 @@ section{
 
 .about-info {
     width: 70%;
-    max-width: 540px;
+    max-width: 580px;
     margin: 0 auto 2.5em auto; /* Center horizontally and add space below */
     display: flex;
     flex-direction: column;
