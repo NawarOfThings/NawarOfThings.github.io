@@ -179,7 +179,7 @@ section{
     left: 24px;
     top: 24px;
     padding: 0.5em 1.2em;
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 500;
     z-index: 2;
 }
@@ -202,6 +202,7 @@ section{
     object-fit: cover;
     border-radius: 0.5em;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 1em;
 }
 
 .btn-box{
@@ -728,12 +729,18 @@ footer{
     .skills-grid {
         grid-template-columns: 1fr; /* 1 column on mobile */
     }
+    .skill-box {
+        font-size: 1.2em; /* Smaller font size */
+        padding: 0.2em 0.2em; /* Adjust padding */
+        min-width: 100px; /* Ensure boxes are not too small */
+    }
 
     .info-card-images img {
         aspect-ratio: 4 / 3;
         max-height: 200px;
         min-height: 100px;
         width: 100%;
+        margin-top: 2em;
     }
     .info-card {
         padding: 1em 0.5em;
