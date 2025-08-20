@@ -151,6 +151,59 @@ section{
     color: var(--text-dark);
 }
 
+.info-card {
+    position: relative;
+    max-width: 600px;
+    width: 90vw;
+    margin: 110px auto 40px auto;
+    background: var(--second-background, #393552);
+    border-radius: 1em;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5em 1.5em 2em 1.5em;
+    text-align: center;
+    min-height: 720px;
+}
+
+.info-card p {
+    padding-top: 0.7em;
+    font-size: 1.6em;
+    font-weight: 400;
+    color: var(--text-light);
+}
+
+.return-btn {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    padding: 0.5em 1.2em;
+    font-size: 1.2em;
+    font-weight: 500;
+    z-index: 2;
+}
+
+/* Add space below the button so images are lower */
+.info-card-images {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 60px;      /* Push images lower */
+    margin-bottom: 1.5em;
+    flex-wrap: wrap;
+}
+
+/* Make images bigger */
+.info-card-images img {
+    aspect-ratio: 4 / 3;
+    max-height: 400px;
+    min-height: 200px;
+    object-fit: cover;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
 .btn-box{
     display: flex;
     gap: 1em;
@@ -674,6 +727,16 @@ footer{
     }
     .skills-grid {
         grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+
+    .info-card-images img {
+        aspect-ratio: 4 / 3;
+        max-height: 200px;
+        min-height: 100px;
+        width: 100%;
+    }
+    .info-card {
+        padding: 1em 0.5em;
     }
 
     .box img {
