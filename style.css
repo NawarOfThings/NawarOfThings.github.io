@@ -76,7 +76,7 @@ nav ul a:hover{
     color: var(--background);
     background: var(--accent);
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1.4em;
     letter-spacing: 1px;
     border: 2px solid var(--accent);
     transition: 0.3s ease-in-out;
@@ -305,7 +305,7 @@ section{
 .honours {
     background: var(--accent);
     color: var(--background);
-    font-weight: 700;
+    font-weight: 500;
     border-radius: 0.4em;
     padding: 0.1em 0.5em;
     margin-left: 0.5em;
@@ -340,7 +340,7 @@ section{
     display: flex;
     align-items: center;
     gap: 0.7em;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.25em;
     color: var(--text-light);
     box-shadow: 0 2px 8px 0 rgba(35,33,54,0.06);
