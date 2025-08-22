@@ -292,12 +292,12 @@ section{
     color: var(--accent);
 }
 .edu-title {
-    font-size: 1.8em;          /* Larger education title */
-    font-weight: 700;          /* Bolder */
+    font-size: 1.6em;          /* Larger education title */
+    font-weight: 600;          /* Bolder */
 }
 
 .edu-detail {
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-weight: 200;
     font-style: italic;
     margin-top: 0.2em;
@@ -324,7 +324,7 @@ section{
     margin-bottom: 0.2em;
 }
 .edu-special {
-    font-size: 1.2em;
+    font-size: 1.4em;
     opacity: 0.85;
     font-style: italic;
     font-weight: 550;
