@@ -662,29 +662,42 @@ footer{
     }
 
     .projects-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
     .about-card h2{
-        font-size: 1.6em; 
+        font-size: 2em; 
+    }
+    .about-card {
+        max-width: 340px;
+        min-width: 260px;
+        padding: 2em 2em 3em 2em;
+        font-size: 0.95em;
     }
     .skills-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        gap: 1em;
     }
     .skill-box {
-        font-size: 1em; /* Smaller font size */
-        padding: 0.2em 0.2em; /* Adjust padding */
-        min-width: 100px; /* Ensure boxes are not too small */
+        padding: 0.3em 0.2em;
+        min-width: 80px;
     }
 
     .box {
-        min-height: 300px; /* Make boxes taller */
-        min-width: 0;      /* Prevent overflow */
-        max-width: 400px;
+        max-width: 340px;
+        min-height: 260px;
+        padding: 1.4em 1.2em;
+        font-size: 0.95em;
+        gap: 1em;
+    }
+    .box h1 {
+        font-size: 2em;
+    }
+    .box p {
+        font-size: 1.4em;
+        font-weight: 600;
     }
     .box img {
-        max-height: 500px;
-        min-height: 100px;
-        width: 100%;
+        max-height: 200px;
+        min-height: 120px;
     }
 }
 
@@ -744,7 +757,7 @@ footer{
         grid-template-columns: 1fr; /* 1 column on mobile */
     }
     .skill-box {
-        font-size: 1.2em; /* Smaller font size */
+        font-size: 1.6em; /* Smaller font size */
         padding: 0.2em 0.2em; /* Adjust padding */
         min-width: 100px; /* Ensure boxes are not too small */
     }
@@ -760,9 +773,13 @@ footer{
         padding: 1em 0.5em;
     }
 
+    .box p {
+        font-size: 1.6em;
+        font-weight: 500;
+    }
     .box img {
         max-height: 200px;
-        min-height: 80px;
+        min-height: 120px;
         width: 100%;
     }
 
