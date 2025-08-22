@@ -297,8 +297,9 @@ section{
 }
 
 .edu-detail {
-    font-size: 1.3em;
-    font-weight: 500;
+    font-size: 1.6em;
+    font-weight: 200;
+    font-style: italic;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
     display: flex;
@@ -309,17 +310,16 @@ section{
 .honours {
     background: var(--accent);
     color: var(--background);
-    font-weight: 500;
+    font-weight: 300;
     border-radius: 0.4em;
     padding: 0.1em 0.5em;
-    margin-left: 0.5em;
     font-size: 0.95em;
-    letter-spacing: 0.5px;
     display: inline-block;
 }
 .edu-years {
     margin-top: 1em;
-    font-size: 1.3em;
+    font-size: 1.4em;
+    font-weight: 500;
     opacity: 0.8;
     margin-bottom: 0.2em;
 }
@@ -328,6 +328,7 @@ section{
     opacity: 0.85;
     font-style: italic;
     font-weight: 550;
+    margin-top: 1em;
 }
 
 .skills-grid {
