@@ -676,6 +676,11 @@ footer{
         min-width: 100px; /* Ensure boxes are not too small */
     }
 
+    .box {
+        min-height: 300px; /* Make boxes taller */
+        min-width: 0;      /* Prevent overflow */
+        max-width: 400px;
+    }
     .box img {
         max-height: 500px;
         min-height: 100px;
@@ -704,6 +709,7 @@ footer{
         gap: 3em;
     }
     .about-info {
+        font-size: 0.8em;
         width: 95%;
         max-width: none;
         margin: 0 auto 2.5em auto;
