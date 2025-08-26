@@ -176,6 +176,7 @@ section{
 
 .return-btn {
     position: absolute;
+    text-decoration: none;
     left: 24px;
     top: 24px;
     padding: 0.5em 1.2em;
