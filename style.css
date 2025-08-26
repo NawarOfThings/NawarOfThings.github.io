@@ -197,8 +197,8 @@ section{
 /* Make images bigger */
 .info-card-images img {
     aspect-ratio: 4 / 3;
-    max-height: 400px;
-    min-height: 200px;
+    max-height: 350px;
+    min-height: 320px;
     object-fit: cover;
     border-radius: 0.5em;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
