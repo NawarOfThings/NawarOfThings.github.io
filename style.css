@@ -172,8 +172,6 @@ section{
     font-size: 1.6em;
     font-weight: 400;
     color: var(--text-light);
-    text-align: left;
-    align-self: flex-start;
 }
 
 .return-btn {
