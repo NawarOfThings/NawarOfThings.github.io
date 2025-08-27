@@ -152,7 +152,7 @@ section{
 }
 
 .info-card {
-    /* position: relative;
+    position: relative;
     max-width: 600px;
     width: 90vw;
     margin: 110px auto 40px auto;
@@ -164,7 +164,7 @@ section{
     align-items: center;
     padding: 2.5em 1.5em 2em 1.5em;
     text-align: center;
-    min-height: 720px; */
+    min-height: 720px;
 }
 
 .info-card p {
