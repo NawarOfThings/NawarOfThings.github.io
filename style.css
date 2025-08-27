@@ -721,6 +721,9 @@ footer{
     #home .btn a{
         font-size: 1em;
     }
+    .logo {
+        font-size: 1.6em;
+    }
 
     #about .skills{
         gap: 3em;
