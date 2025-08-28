@@ -593,6 +593,35 @@ footer{
     background: var(--accent);
 }
 
+/* .flag-text {
+  font-weight: bold; /* helps the gradient show better */
+  /* background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block; /* ensures gradient applies neatly */
+/* } */
+
+/* 🇪🇸 Spanish flag: red–yellow–red */
+/* .flag-es {
+  background-image: linear-gradient(
+    to bottom,
+    #aa151b 0%,
+    #aa151b 33.33%,
+    #f1bf00 33.33%,
+    #f1bf00 66.66%,
+    #aa151b 66.66%,
+    #aa151b 100%
+  );
+} */
+
+/* 🇯🇵 Japanese flag: white background with centered red circle */
+/* .flag-ja {
+  background-image:
+    radial-gradient(circle at 50% 50%, #bc002d 0 35%, transparent 36%),
+    linear-gradient(#ffffff, #ffffff);
+} */
+
+
 @media(max-width: 968px){
     section{
         padding: 8em 15%;
