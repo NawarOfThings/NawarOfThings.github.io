@@ -422,7 +422,7 @@ section{
     text-align: center;
     font-style: italic;
     font-size: 4.2em;
-    margin: 3em 0 1em 0; /* Increase gap above Projects, keep below as is */
+    margin: 2em 0 1em 0; /* Increase gap above Projects, keep below as is */
     color: var(--accent);
 
     text-transform: uppercase;
