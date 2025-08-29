@@ -230,13 +230,25 @@ section{
 }
 
 .about-info {
-    width: 80%;
-    max-width: 650px;
+    width: 81.3%;
     margin: 0 auto 2.5em auto; /* Center horizontally and add space below */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    
+    max-width: 845px;
+    border: 3px solid var(--box-border);
+    border-radius: 0.7em;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 1em 2em;
+    gap: 1.2em;
+    color: var(--text-light);
+    background: var(--second-background);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;      /* Make boxes taller */
+    min-width: 0;           /* Prevent overflow */
 }
 #about{
     background-color: var(--second-background);
@@ -261,7 +273,7 @@ section{
     color: var(--accent);
 }
 .about-box p{
-    color: var(--text-dark);
+    color: var(--text-light);
     font-size: 2em;
     opacity: 0.9;
 }
@@ -408,10 +420,15 @@ section{
 }
 .header {
     text-align: center;
-    font-size: 3.5em;
-    margin: 2em 0 1em 0; /* Increase gap above Projects, keep below as is */
+    font-style: italic;
+    font-size: 4.2em;
+    margin: 3em 0 1em 0; /* Increase gap above Projects, keep below as is */
     color: var(--accent);
+
+    text-transform: uppercase;
+    font-weight: 700;
 }
+
 .projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 2 columns on desktop */
@@ -677,7 +694,7 @@ footer{
         font-size: 1em;
     }
     .about-info {
-        width: 95%;
+        width: 100%;
         max-width: none;
         margin: 0 auto 2.5em auto;
     }
@@ -759,7 +776,7 @@ footer{
     }
     .about-info {
         font-size: 0.8em;
-        width: 95%;
+        width: 100%;
         max-width: none;
         margin: 0 auto 2.5em auto;
     }
