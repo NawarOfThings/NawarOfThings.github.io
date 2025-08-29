@@ -209,6 +209,15 @@ section{
 .btn-box{
     display: flex;
     gap: 1em;
+    text-decoration: none;
+}
+.btn-box a {
+  text-decoration: none;   /* remove underline */
+  color: inherit;          /* inherit text color from .btn */
+  display: block;          /* ensures the div inside is fully clickable */
+}
+.btn:visited {
+  color: var(--accent);        /* prevent purple visited */
 }
 .btn-box .btn:nth-of-type(2){
     background-color: var(--background);
