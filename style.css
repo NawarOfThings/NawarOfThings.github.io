@@ -246,9 +246,11 @@ section{
     gap: 1.2em;
     color: var(--text-light);
     background: var(--second-background);
-    cursor: pointer;
     transition: 0.3s ease-in-out;      /* Make boxes taller */
     min-width: 0;           /* Prevent overflow */
+}
+.about-info:hover{
+    border: 3px solid var(--box-hover);
 }
 #about{
     background-color: var(--second-background);
