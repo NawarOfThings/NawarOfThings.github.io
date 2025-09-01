@@ -429,6 +429,9 @@ section{
 
     text-transform: uppercase;
     font-weight: 700;
+
+    /* shadow with different color */
+    text-shadow: 3px 3px 0 #fdd4a7;
 }
 
 .projects-container {
